@@ -6,3 +6,17 @@
 [![Platform](https://img.shields.io/badge/platform-x86__64-lightgrey.svg)](https://en.wikipedia.org/wiki/X86-64)
 [![Boot](https://img.shields.io/badge/boot-UEFI%2FBIOS-green.svg)](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface)
 [![Status](https://img.shields.io/badge/status-deprecated-red.svg)](https://github.com/)
+
+---
+
+> ⚠️ **Important Notice**: From April 1, 2026 onwards, we will cease updating documentation for individual projects. Please refer to the links below to access the desired content.
+
+**Repository Description**  
+This repository is not the main project repository. It functions as a central documentation guide for the entire UTOPIA ecosystem. It includes comprehensive guides, feature requirement updates for all packages and projects, academic developments, and a summary of all pull requests and issues.
+
+**Official Resources**
+
+- 📖 **[Official Documentation](https://docs.utopia-kernel.org)**  
+- 📄 **[Preprint Release](https://arxiv.org/abs/xxxx.xxxxx)**  
+- 📦 **[Official Package List & Releases](https://github.com/yourusername/utopia-kernel/releases)**
+
