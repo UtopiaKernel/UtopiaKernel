@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>UtopiaKernel</title>
+    <meta name="description" content="UtopiaKernel 项目门户" />
+
+    <meta property="og:title" content="UtopiaKernel" />
+    <meta property="og:description" content="UtopiaKernel 项目门户" />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+
+    <style>
+      .portal {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 28px 16px 48px;
+      }
+      .hero {
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        background: var(--panel);
+        padding: 22px 22px;
+      }
+      .hero h1 {
+        margin: 0 0 10px;
+        font-size: 32px;
+        letter-spacing: .2px;
+      }
+      .hero p {
+        margin: 0 0 14px;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+      .cta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 14px;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid var(--border);
+        background: var(--panel2);
+        color: var(--text);
+        border-radius: 6px;
+        padding: 9px 12px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .btn:hover { text-decoration: none; background: #eef1f4; }
+      html[data-theme="dark"] .btn:hover { background: #1f2630; }
+      .btn--primary {
+        border-color: rgba(9,105,218,.45);
+        background: #ddf4ff;
+      }
+      html[data-theme="dark"] .btn--primary {
+        background: rgba(56,139,253,.18);
+        border-color: rgba(56,139,253,.45);
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin-top: 14px;
+      }
+      @media (max-width: 900px) { .cards { grid-template-columns: 1fr; } }
+      .card {
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        background: var(--panel);
+        padding: 14px 14px;
+      }
+      .card__title { font-weight: 700; margin: 0 0 6px; }
+      .card__desc { margin: 0; color: var(--muted); line-height: 1.65; }
+      .card__link { display: inline-block; margin-top: 10px; }
+      .portal-footer { margin-top: 18px; color: var(--muted); font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+
+    <header class="topbar">
+      <div class="topbar__left">
+        <a class="brand" href="./">
+          <span class="brand__mark">UK</span>
+          <span class="brand__text">UtopiaKernel</span>
+        </a>
+      </div>
+      <div class="topbar__center">
+        <div style="color: var(--muted); font-size: 13px;">
+          项目门户 · 快速入口
+        </div>
+      </div>
+      <div class="topbar__right">
+        <a class="topbar__link" href="./docs.html#/home">文档</a>
+        <a class="topbar__link" href="https://github.com/UtopiaKernel/UtopiaKernel" target="_blank" rel="noreferrer">
+          GitHub
+        </a>
+        <button class="icon-btn" id="themeToggle" aria-label="切换深浅色">
+          <span class="icon icon--sun" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="portal" id="main" tabindex="-1">
+      <section class="hero">
+        <h1>UtopiaKernel</h1>
+        <p>
+          这里是项目门户首页。你可以从这里进入文档、查看仓库、以及访问外部资源链接。
+        </p>
+        <img
+          src="./assets/images/banner.svg"
+          alt="UtopiaKernel 项目横幅"
+          style="width: 100%; height: auto; border: 1px solid var(--border); border-radius: var(--radius); margin-top: 12px;"
+        />
+        <div class="cta">
+          <a class="btn btn--primary" href="./docs.html#/home">进入文档</a>
+          <a class="btn" href="https://github.com/UtopiaKernel/UtopiaKernel" target="_blank" rel="noreferrer">打开 GitHub</a>
+          <a class="btn" href="https://docs.utopia-kernel.org" target="_blank" rel="noreferrer">官方文档</a>
+        </div>
+      </section>
+
+      <section class="cards" aria-label="快速入口">
+        <div class="card">
+          <div class="card__title">快速开始</div>
+          <p class="card__desc">如何新增页面、配置导航、在 Pages 上部署。</p>
+          <a class="card__link" href="./docs.html#/getting-started">阅读</a>
+        </div>
+        <div class="card">
+          <div class="card__title">站点结构</div>
+          <p class="card__desc">了解文件结构、路由规则与 BasePath 适配方式。</p>
+          <a class="card__link" href="./docs.html#/structure">阅读</a>
+        </div>
+        <div class="card">
+          <div class="card__title">写作规范</div>
+          <p class="card__desc">Markdown 约定、代码高亮与表格示例。</p>
+          <a class="card__link" href="./docs.html#/writing">阅读</a>
+        </div>
+      </section>
+
+      <section class="hero" aria-label="公益宣传" style="margin-top: 14px;">
+        <h1 style="font-size: 20px; margin: 0 0 8px;">公益宣传</h1>
+        <p style="margin: 0 0 12px;">
+          让技术更有温度：关注弱势群体、支持开放教育与开源、参与力所能及的志愿行动。
+          如果你愿意，可以从“行动建议”里挑一件小事开始。
+        </p>
+        <img
+          src="./assets/images/public-welfare.svg"
+          alt="公益宣传插画"
+          style="width: 100%; height: auto; border: 1px solid var(--border); border-radius: var(--radius); margin: 8px 0 12px;"
+        />
+        <div class="cta" style="margin-top: 0;">
+          <a class="btn btn--primary" href="./docs.html#/public-welfare">查看行动建议</a>
+          <a class="btn" href="https://www.unicef.org/" target="_blank" rel="noreferrer">了解 UNICEF</a>
+        </div>
+      </section>
+
+      <div class="portal-footer">
+        © UtopiaKernel · <a href="./docs.html#/home">Docs</a>
+      </div>
+    </main>
+
+    <script type="module" src="./assets/portal/main.js"></script>
+  </body>
+</html>

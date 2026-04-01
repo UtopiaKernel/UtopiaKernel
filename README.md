@@ -20,3 +20,23 @@ This repository is not the main project repository. It functions as a central do
 - 📄 **[Preprint Release](https://arxiv.org/abs/xxxx.xxxxx)**  
 - 📦 **[Official Package List & Releases](https://github.com/yourusername/utopia-kernel/releases)**
 
+---
+
+## Documentation Website Template (GitHub Pages)
+
+This repository includes a **static documentation website template** ready for GitHub Pages:
+
+- Entry: `index.html`
+- Docs content: `docs/*.md`
+- Navigation config: `docs/nav.json`
+
+### Local preview
+
+You can preview it locally with any static server, for example:
+
+```bash
+python -m http.server 8000
+```
+
+Then open `http://localhost:8000/` and navigate via `#/home`.
+
